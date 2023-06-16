@@ -1,11 +1,11 @@
-const button = document.querySelector('button')! as HTMLButtonElement;
-const input1 = document.getElementById('num1')! as HTMLInputElement;
-const input2 = document.getElementById('num2')! as HTMLInputElement;
-function add(num1: number, num2: number) {
+const buttonAdd = document.querySelector('button')! as HTMLButtonElement;
+const inputNumber1 = document.getElementById('num1')! as HTMLInputElement;
+const inputNumber2 = document.getElementById('num2')! as HTMLInputElement;
+const addNumber = (num1: number, num2: number): number => {
   return num1 + num2;
-}
-button.addEventListener('click', function () {
-  console.log(add(+input1.value, +input2.value));
+};
+buttonAdd.addEventListener('click', function () {
+  console.log(addNumber(+inputNumber1.value, +inputNumber2.value));
 });
 
 let age: number = 50;
